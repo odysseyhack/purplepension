@@ -1,0 +1,15 @@
+{
+  "name": "purplepension-backend",
+  "version": "1.0.0",
+  "description": "Using day-to-day activities to increase pension-awareness",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u0016\u0016https://github.com/odysseyhack/purplepension"
+  },
+  "author": "PurplePension",
+  "license": "ISC"
+}

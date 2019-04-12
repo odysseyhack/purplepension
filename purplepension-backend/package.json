@@ -11,5 +11,8 @@
     "url": "\u0016\u0016https://github.com/odysseyhack/purplepension"
   },
   "author": "PurplePension",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }

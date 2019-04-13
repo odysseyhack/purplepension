@@ -3,7 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AccountComponent } from './account/account.component';
 import { ConnectionsComponent } from './connections/connections.component';
-import { ForecastComponent } from './forecast/forecast.component';
 import { InsightComponent } from './insight/insight.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { SettingsComponent } from './settings/settings.component';
@@ -22,10 +21,6 @@ const routes: Routes = [
 { 
     path: 'connections', component: ConnectionsComponent,
     children : [{path:'', component:ConnectionsComponent}] 
-},
-{ 
-    path: 'forecast', component: ForecastComponent,
-    children : [{path:'', component:ForecastComponent}] 
 },
 { 
     path: 'insight', component: InsightComponent,

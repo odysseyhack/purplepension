@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { FitappService } from '../services/fitapp.service';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,13 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  private stats;
+
+  constructor(private fitservice : FitappService) {
+    this.stats = this.fitservice.getActivities().subscribe(data => console.log(data));//var data = this.fitservice.getStats().subscribe(data => console.log(data));
+    //console.log(data);
+    
+  }
 
   
   ngOnInit() {

@@ -10,10 +10,13 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
+  
   ngOnInit() {
     localStorage.clear;
     localStorage.setItem('Title', 'My dashboard');
     localStorage.setItem('Context', 'Hi Diego! Your run today just gave you 2 Euros extra to spend later! Keep up the good work!');
   }
+
+
 
 }

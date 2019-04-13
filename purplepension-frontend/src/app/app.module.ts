@@ -12,6 +12,8 @@ import { ConnectionsComponent } from './connections/connections.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { SettingsComponent } from './settings/settings.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { ChartsModule } from 'ng2-charts';
+import { MyLineChartComponent } from './my-line-chart/my-line-chart.component';
 
 @NgModule({
   declarations: [
@@ -23,11 +25,13 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     ConnectionsComponent,
     NotificationsComponent,
     SettingsComponent,
-    SidebarComponent
+    SidebarComponent,
+    MyLineChartComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

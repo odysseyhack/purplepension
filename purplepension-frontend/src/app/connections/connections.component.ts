@@ -10,6 +10,9 @@ export class ConnectionsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    localStorage.clear;
+    localStorage.setItem('Title', 'Connections');
+    localStorage.setItem('Context', 'You have 6 connected applications that track your healthy lifestyle!');
   }
 
 }

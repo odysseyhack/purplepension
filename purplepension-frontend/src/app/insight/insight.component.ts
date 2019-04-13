@@ -12,6 +12,7 @@ export class InsightComponent implements OnInit {
   ngOnInit() {
     localStorage.clear;
     localStorage.setItem('Title', 'Insights');
+    localStorage.setItem('Context', ' ');
   }
 
 }

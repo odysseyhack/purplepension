@@ -12,6 +12,7 @@ export class NotificationsComponent implements OnInit {
   ngOnInit() {
     localStorage.clear;
     localStorage.setItem('Title', 'Notifications');
+    localStorage.setItem('Context', 'How do you want me to approach you?');
   }
 
 }

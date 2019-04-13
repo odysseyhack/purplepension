@@ -12,6 +12,7 @@ export class AccountComponent implements OnInit {
   ngOnInit() {
     localStorage.clear;
     localStorage.setItem('Title', 'My account');
+    localStorage.setItem('Context', 'Not everyone should have access to your private data. Tell me what i must keep private!');
   }
 
 }

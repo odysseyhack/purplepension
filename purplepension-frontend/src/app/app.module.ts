@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -7,11 +8,11 @@ import { AppComponent } from './app.component';
 import { AccountComponent } from './account/account.component';
 import { HomeComponent } from './home/home.component';
 import { InsightComponent } from './insight/insight.component';
-import { ForecastComponent } from './forecast/forecast.component';
 import { ConnectionsComponent } from './connections/connections.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { SettingsComponent } from './settings/settings.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { FitappService } from './services/fitapp.service';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,6 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     AccountComponent,
     HomeComponent,
     InsightComponent,
-    ForecastComponent,
     ConnectionsComponent,
     NotificationsComponent,
     SettingsComponent,
@@ -28,8 +28,11 @@ import { SidebarComponent } from './sidebar/sidebar.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    FitappService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

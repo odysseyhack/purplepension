@@ -159,3 +159,10 @@
      max-width: 100vw;
      width: 100%;
  }
+
+ .header-context {
+     max-width: 100vw;
+     width: 80%;
+     margin: auto;
+     text-align: center;
+ }

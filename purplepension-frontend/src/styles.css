@@ -3,6 +3,11 @@
 * {
     font-family: 'open-sans', 'lato', sans-serif;
     font-size: 12pt;
+    
+}
+
+body {
+    background-color: #0037EF0D;
 }
 
 h1 {

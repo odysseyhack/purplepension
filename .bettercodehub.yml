@@ -1,0 +1,3 @@
+exclude:
+- .*/purplepension-frontend\src\karma.conf.js
+- .*/purplepension-frontend\e2e\protractor.conf.js

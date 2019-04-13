@@ -7,6 +7,7 @@ import { ForecastComponent } from './forecast/forecast.component';
 import { InsightComponent } from './insight/insight.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { SettingsComponent } from './settings/settings.component';
+import { NotificationsComponent } from './notifications/notifications.component';
 
 const routes: Routes = [
   { 
@@ -37,6 +38,10 @@ const routes: Routes = [
 { 
     path: 'settings', component: SettingsComponent,
     children : [{path:'', component:SettingsComponent}] 
+},
+{ 
+    path: 'notifications', component: NotificationsComponent,
+    children : [{path:'', component:NotificationsComponent}] 
 }
 ];
 

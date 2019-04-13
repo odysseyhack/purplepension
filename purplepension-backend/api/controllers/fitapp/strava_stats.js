@@ -10,7 +10,7 @@ router.get("/", (req, res) => {
   const uri = `${HOST}${API}/athletes/${athleteId}/stats`;
   const args = {
     headers: {
-      Authorization: "Bearer " + config.access_token,
+      Authorization: `Bearer ${onfig.access_token}`,
       "Content-Type": "application/json"
     }
   };

@@ -11,6 +11,8 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    localStorage.clear;
+    localStorage.setItem('Title', 'My dashboard');
   }
 
 }

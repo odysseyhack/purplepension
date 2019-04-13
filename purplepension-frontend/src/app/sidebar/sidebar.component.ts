@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
+  title : string;
+
   constructor() { }
 
   ngOnInit() {
+    this.title = localStorage.getItem('Title');
   }
 
 }

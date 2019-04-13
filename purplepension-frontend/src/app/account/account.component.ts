@@ -10,6 +10,8 @@ export class AccountComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    localStorage.clear;
+    localStorage.setItem('Title', 'My account');
   }
 
 }

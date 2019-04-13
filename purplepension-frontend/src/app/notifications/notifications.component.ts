@@ -10,6 +10,8 @@ export class NotificationsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    localStorage.clear;
+    localStorage.setItem('Title', 'Notifications');
   }
 
 }

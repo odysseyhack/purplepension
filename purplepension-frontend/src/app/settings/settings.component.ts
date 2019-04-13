@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-settings',
@@ -10,6 +11,8 @@ export class SettingsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    localStorage.clear;
+    localStorage.setItem('Title', 'Settings');
   }
 
 }

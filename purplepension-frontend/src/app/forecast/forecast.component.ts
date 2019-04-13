@@ -10,6 +10,8 @@ export class ForecastComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    localStorage.clear;
+    localStorage.setItem('Title', 'Forecast');
   }
 
 }

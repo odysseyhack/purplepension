@@ -138,3 +138,11 @@
  {
    transform: none;
  }
+
+ .account {
+     margin-bottom: 30px;
+ }
+
+ #settings-menu {
+     margin-top: 50px;
+ }

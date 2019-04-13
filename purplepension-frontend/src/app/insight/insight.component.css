@@ -40,11 +40,6 @@ table {
       font-weight: bold;
   }
 
-  .type{
-    font-weight: 100;
-    opacity: 0.5; 
-  }
-
   .remove{
     display: inline;
     border-radius: 90px;

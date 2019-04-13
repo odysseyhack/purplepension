@@ -1,16 +1,48 @@
 #container{
-    margin: 10px;
+    margin: 5%;
 }
 
-
-#item {
-    border-radius: 5px;
-    padding: 20px;
+#one {
     background: #f12711;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right bottom, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right bottom, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#two {
+    background: #56ab2f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right bottom, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right bottom, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#three {
+    background: #00B4DB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right bottom, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right bottom, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#four {
+    background: #7F00FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right bottom, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right bottom, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+
+#five {
+    background: #f12711;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right bottom, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right bottom, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#six {
+    background: #56ab2f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right bottom, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right bottom, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+}
+
+.item {
+    border-radius: 5px;
+    padding: 20px;
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .content{
@@ -43,4 +75,5 @@ h2 {
 h3{
     opacity: 0.8;
     font-size: 15px;
+    line-height: 0px;
 }

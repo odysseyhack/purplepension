@@ -1,7 +1,7 @@
 const express = require("express"),
   app = express(),
   router = express.Router(),
-  fitapp = require("./controllers/fitapp/fitapp_controller");
+  fitapp = require("./controllers/fitapp/strava_controller");
 
 router.use("/fitapp", fitapp);
 

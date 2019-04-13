@@ -1,0 +1,19 @@
+main {
+    max-width: 80vw;
+    width: 100%;
+    margin: auto;
+    height: auto;
+    padding-bottom: 5vh;
+    text-align: center;
+}
+
+#graph-img {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/graphs-home.png);
+    margin: auto;
+    margin-bottom: 10vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+}

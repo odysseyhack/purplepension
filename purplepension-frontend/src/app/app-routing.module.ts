@@ -8,7 +8,6 @@ import { InsightComponent } from './insight/insight.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { SettingsComponent } from './settings/settings.component';
 import { NotificationsComponent } from './notifications/notifications.component';
-import { MyLineChartComponent } from './my-line-chart/my-line-chart.component';
 
 const routes: Routes = [
   { 
@@ -43,10 +42,6 @@ const routes: Routes = [
 { 
     path: 'notifications', component: NotificationsComponent,
     children : [{path:'', component:NotificationsComponent}] 
-},
-{ 
-    path: 'linegraph', component: MyLineChartComponent,
-    children : [{path:'', component:MyLineChartComponent}] 
 }
 ];
 

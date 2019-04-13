@@ -10,11 +10,12 @@ router.get("/", (req, res) => {
   const uri = `${HOST}${API}/athletes/${athleteId}/stats`;
   const args = {
     headers: {
-      Authorization: `Bearer ${onfig.access_token}`,
+      Authorization: `Bearer ${config.access_token}`,
       "Content-Type": "application/json"
     }
   };
   request.get(uri, args, function(err, response, body) {
+    res.setHeader('Content-Type', 'application/json');
     if (!err) res.send(body);
     else console.log(err);
   });

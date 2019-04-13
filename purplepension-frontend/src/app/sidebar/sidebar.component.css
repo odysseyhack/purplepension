@@ -109,9 +109,10 @@
  #menu
  {
    position: absolute;
-   width: 300px;
-   margin: -100px 0 0 -50px;
-   padding: 50px;
+   width: 275px;
+   height: 100vh;
+   margin: -100px 0 0 -75px;
+   padding: 75px;
    padding-top: 125px;
    
    background: #ededed;
@@ -128,7 +129,6 @@
  #menu li
  {
    padding: 10px 0;
-   font-size: 22px;
  }
  
  /*
@@ -140,7 +140,7 @@
  }
 
  .account {
-     margin-bottom: 30px;
+     margin-bottom: 50px;
  }
 
  #settings-menu {

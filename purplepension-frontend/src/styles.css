@@ -31,3 +31,13 @@ h3 {
     font-size: 14pt;
     font-weight: 300;
 }
+
+#load{
+    width:100vw;
+    height: 110vh;
+    margin-top: -10vh;
+    overflow: hidden;
+    position:fixed;
+    z-index:9999;
+    background:url("app/images/loading.gif") no-repeat center center white;
+}

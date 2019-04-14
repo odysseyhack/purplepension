@@ -17,7 +17,7 @@ router.get("/", (req, res) => {
   request.get(uri, args, function(err, response, body) {
     res.setHeader('Content-Type', 'application/json');
     if (!err) res.send(body);
-    else console.log(err);
+    else console.log('Error: ' + err);
   });
 });
 

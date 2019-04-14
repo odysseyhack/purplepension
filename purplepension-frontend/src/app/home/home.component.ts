@@ -36,11 +36,14 @@ export class HomeComponent implements OnInit {
         count += element['distance'];
       });
 
-      var div = document.createElement("DIV");
-      div.setAttribute('class', 'item');
-      div.innerHTML = count/1000 + ' km runned total';
+      var kmWalked = document.createElement("span");
+      kmWalked.innerHTML = `You ran ${Math.round(count/1000)} km total in the last month!`;
 
-      document.getElementById("data").appendChild(div);
+      var timesRunned = document.createElement("span");
+      timesRunned.innerHTML = `You did ${this.stats.length} activities in the last month!`;
+
+      document.getElementById("data").appendChild(kmWalked);
+      document.getElementById("times").appendChild(timesRunned);
       
 
     }, err => console.log(err));

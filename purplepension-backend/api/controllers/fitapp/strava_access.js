@@ -5,9 +5,7 @@ var fs = require("fs");
 const config = require("../../../data/strava_config");//const config = JSON.parse(fs.readFileSync('../../../data/strava_config', 'utf8'));
 const HOST = "https://www.strava.com";
 
-router.get("/", function(req, res) {
-  console.log('get acces');
-  
+router.get("/", function(req, res) {  
   var redirectUri = "http://localhost:3000/api/fitapp/access/receive";
   var uri = `https://www.strava.com/oauth/authorize?client_id=${config.client_id}&redirect_uri=${redirectUri}&response_type=code&scope=activity:read_all`;
   return res.redirect(uri);
@@ -33,6 +31,7 @@ router.get("/receive", function(req, res) {
 
       return res.redirect(`../activity?access_token=${access_token}`);
     } else {
+      console.log('Error: ' + err);
       res.send(err);
     }
   });

@@ -5,14 +5,15 @@ import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AccountComponent } from './account/account.component';
-import { HomeComponent } from './home/home.component';
-import { InsightComponent } from './insight/insight.component';
-import { ConnectionsComponent } from './connections/connections.component';
-import { NotificationsComponent } from './notifications/notifications.component';
-import { SettingsComponent } from './settings/settings.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
-import { FitappService } from './services/fitapp.service';
+import { AccountComponent } from './components/account/account.component';
+import { HomeComponent } from './components/home/home.component';
+import { InsightComponent } from './components/insight/insight.component';
+import { ConnectionsComponent } from './components/connections/connections.component';
+import { NotificationsComponent } from './components/notifications/notifications.component';
+import { SettingsComponent } from './components/settings/settings.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { FitappService } from './services/fitapp/fitapp.service';
+import { BlockchainService } from './services/blockchain/blockchain.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { FitappService } from './services/fitapp.service';
     HttpClientModule,
   ],
   providers: [
-    FitappService
+    FitappService,
+    BlockchainService
   ],
   bootstrap: [AppComponent]
 })

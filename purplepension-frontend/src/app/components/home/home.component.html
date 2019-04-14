@@ -1,0 +1,84 @@
+<app-sidebar></app-sidebar>
+
+<main>
+  <!-- <div id="graph-img"></div> -->
+  <div class="chart">
+    <img src="../../assets/images/graphs-home.png" alt="" />
+  </div>
+  <br />
+  <div id="container">
+    <h2>Your events from the blockchain</h2>
+    <div class="item">
+      <div id="eventTimeline">
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Public key</th>
+            <th>Event type</th>
+            <th>Date</th>
+          </tr>
+          <tr *ngFor="let event of signEvents">
+            <td class="name">{{ event.name }}</td>
+            <td class="name">{{ event.signedBy }}</td>
+            <td class="remove">Data signed</td>
+            <td class="name">{{ event.timestamp }}</td>
+          </tr>
+          <tr *ngFor="let event of dataViewEvents">
+            <td class="name">{{ event.name }}</td>
+            <td class="name">{{ event.accessor }}</td>
+            <td class="remove">Data accessed</td>
+            <td class="name">{{ event.timestamp }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <br />
+  <div id="detailItems">
+    <div class="item" id="one">
+      <div class="content">
+        <div class="left">
+          <h2>BasicFit</h2>
+          <h3>Connected via FitBit Platform</h3>
+        </div>
+        <div class="right">
+          <h3 class="edit">Edit</h3>
+        </div>
+      </div>
+    </div>
+    <div class="item" id="two">
+      <div class="content">
+        <div class="left">
+          <h2>FitBit Wearable</h2>
+          <h3>Connected via FitBit Platform</h3>
+        </div>
+        <div class="right">
+          <h3 class="edit">Edit</h3>
+        </div>
+      </div>
+    </div>
+    <div class="item" id="three">
+      <div class="content">
+        <div class="left">
+          <h2>FitBit Wearable</h2>
+          <h3>Connected via FitBit Platform</h3>
+        </div>
+        <div class="right">
+          <h3 class="edit">Edit</h3>
+        </div>
+      </div>
+    </div>
+    <div class="item" id="four">
+      <div class="content">
+        <div class="left">
+          <h2>FitBit Wearable</h2>
+          <h3>Connected via FitBit Platform</h3>
+        </div>
+        <div class="right">
+          <h3 class="edit">Edit</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { AccountComponent } from './account/account.component';
-import { ConnectionsComponent } from './connections/connections.component';
-import { InsightComponent } from './insight/insight.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
-import { SettingsComponent } from './settings/settings.component';
-import { NotificationsComponent } from './notifications/notifications.component';
+import { HomeComponent } from './components/home/home.component';
+import { AccountComponent } from './components/account/account.component';
+import { ConnectionsComponent } from './components/connections/connections.component';
+import { InsightComponent } from './components/insight/insight.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { SettingsComponent } from './components/settings/settings.component';
+import { NotificationsComponent } from './components/notifications/notifications.component';
 
 const routes: Routes = [
   { 

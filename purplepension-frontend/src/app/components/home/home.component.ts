@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { FitappService } from '../services/fitapp.service';
+import { FitappService } from '../../services/fitapp/fitapp.service';
+import { BlockchainService } from '../../services/blockchain/blockchain.service';
+
 
 @Component({
   selector: 'app-home',
@@ -10,8 +12,10 @@ import { FitappService } from '../services/fitapp.service';
 export class HomeComponent implements OnInit {
 
   private stats;
+  private signEvents;
+  private dataViewEvents;
 
-  constructor(private fitservice : FitappService) {   
+  constructor(private fitservice : FitappService, private blockchainService: BlockchainService) {   
     
   }
 
@@ -29,6 +33,8 @@ export class HomeComponent implements OnInit {
       var array1 = ['FitBit', 'BasicFit', 'HealthApp'];
   
       this.loadData();
+      this.loadSignEvents();
+      this.loadDataViewEvents();
       console.log(this.stats);
   
       var count = 0;
@@ -54,8 +60,20 @@ export class HomeComponent implements OnInit {
     this.fitservice.getActivities().subscribe(data => {
       this.stats = data;
       console.log('Done loading!');
-    }, err => console.log(err));//var data = this.fitservice.getStats().subscribe(data => console.log(data));
-    //console.log(data);
+    }, err => console.log(err));
   }
 
+  loadSignEvents() {
+    this.blockchainService.getSignEvents().subscribe(data => {
+      this.signEvents = data;
+      console.log(this.signEvents)
+    }, err => console.log(err));
+  }
+
+  loadDataViewEvents() {
+    this.blockchainService.getDataViewEvents().subscribe(data => {
+      this.dataViewEvents = data;
+      console.log(this.dataViewEvents);
+    }, err => console.log(err));
+  }
 }

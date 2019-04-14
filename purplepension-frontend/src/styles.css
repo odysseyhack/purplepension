@@ -34,10 +34,12 @@ h3 {
 
 #load{
     width:100vw;
-    height: 110vh;
+    height: 100vh;
     margin-top: -10vh;
     overflow: hidden;
     position:fixed;
     z-index:9999;
-    background:url("app/images/loading.gif") no-repeat center center white;
+    background:url(./assets/images/optimisedanimation.gif) no-repeat center center white;
+    padding-bottom: 20vh;
+    overflow: hidden;
 }

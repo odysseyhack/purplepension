@@ -7,10 +7,14 @@ main {
     text-align: center;
 }
 
+.chart{
+    width: 20vw;
+}
+
 #graph-img {
     width: 100%;
     height: 100vh;
-    background-image: url(../images/graphs-home.png);
+    /* background-image: url(../images/graphs-home.png); */
     margin: auto;
     margin-bottom: 10vh;
     background-repeat: no-repeat;

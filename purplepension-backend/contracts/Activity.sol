@@ -7,7 +7,7 @@ contract Activity {
   address public allowed_to_view;
 
 
-  event DataViewed(address accessor, bytes32 name, uint timestamp); // When data is read
+  event DataViewed(address accessor, string name, uint timestamp); // When data is read
   event ActivitySigned(address signedBy, string name, uint timestamp); //When an activity is signed
 
   modifier onlyAllowed() {
@@ -26,10 +26,11 @@ contract Activity {
     owner = msg.sender;
     allowed_to_view = msg.sender;
     emit ActivitySigned(msg.sender, "BasicFit", now);
+    emit DataViewed(msg.sender, "Employer", now);
   }
    
   function viewData() public onlyAllowed returns(address,string memory) {
-    emit DataViewed(msg.sender, "BasicFit", now);
+    emit DataViewed(msg.sender, "Employer", now);
     return (owner, " went to the gym from 2 to 4 on Wednesday!");
   }
   

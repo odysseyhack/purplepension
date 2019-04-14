@@ -9,7 +9,7 @@ router.get("/sign", (req, res) => {
   const eventsToReturn = [];
   const myContract = new web3.eth.Contract(
     bc_handler.getABI("Activity"),
-    "0x3f53488287FD76A165a294Ab18b3813CEd14f5E8"
+    "0x5757935B3A4e68C2546888787738e9Ee729eF4D2"
   )
     .getPastEvents(
       "ActivitySigned",
@@ -35,7 +35,7 @@ router.get("/access", (req, res) => {
   const eventsToReturn = [];
   const myContract = new web3.eth.Contract(
     bc_handler.getABI("Activity"),
-    "0x3f53488287FD76A165a294Ab18b3813CEd14f5E8"
+    "0x5757935B3A4e68C2546888787738e9Ee729eF4D2"
   )
     .getPastEvents(
       "DataViewed",
@@ -48,7 +48,7 @@ router.get("/access", (req, res) => {
     .then(events => {
       events.forEach((val, index) => {
         eventsToReturn.push({
-          signedBy: val.returnValues.accessor,
+          accessor: val.returnValues.accessor,
           name: val.returnValues.name,
           timestamp: moment.unix(val.returnValues.timestamp.toNumber()).format('YYYY-MM-DD')
         });

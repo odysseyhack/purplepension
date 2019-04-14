@@ -15,7 +15,6 @@ router.get("/", function(req, res) {
   var uri = `${HOST}${API}/athlete/activities/`;
 
   activity_token = fs.readFileSync("./data/activity_token");
-  console.log(activity_token.toString());
   
 
   args.headers = {

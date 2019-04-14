@@ -5,7 +5,6 @@ contract("User", accounts => {
   it("should deploy User contract correctly", () => {
     User.deployed().then(instance => {
       user_instance = instance;
-      console.log(user_instance);
       return user_instance.getName.call();
     })
     .then(name => {

@@ -7,7 +7,7 @@ main {
 }
 
 .chart img{
-    width: 80vw;
+    width: 83.5vw;
 }
 
 #graph-img {
@@ -22,17 +22,19 @@ main {
 }
 
 #detailItems {
-    width: 80vw;
+
 }
 
 .item {
     border-radius: 5px;
     margin: 20px;
+    margin-left: 0px;
     color: white;
     margin-bottom: 15px;
     max-width: 80vw;
     width: 100%;
     padding: 30px;
+    float: left;
 }
 
 #one {

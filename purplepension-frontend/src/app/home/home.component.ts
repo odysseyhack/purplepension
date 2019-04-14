@@ -37,10 +37,10 @@ export class HomeComponent implements OnInit {
       });
 
       var kmWalked = document.createElement("span");
-      kmWalked.innerHTML = Math.round(count/1000) + ' km runned total';
+      kmWalked.innerHTML = `You ran ${Math.round(count/1000)} km total in the last month!`;
 
       var timesRunned = document.createElement("span");
-      timesRunned.innerHTML = this.stats.length + 'X';
+      timesRunned.innerHTML = `You did ${this.stats.length} activities in the last month!`;
 
       document.getElementById("data").appendChild(kmWalked);
       document.getElementById("times").appendChild(timesRunned);

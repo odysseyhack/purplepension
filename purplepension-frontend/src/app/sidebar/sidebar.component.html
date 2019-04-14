@@ -1,0 +1,42 @@
+<header>
+
+<nav role="navigation" style="z-index:9;">
+    <div id="menuToggle">
+      <!--
+      A fake / hidden checkbox is used as click reciever,
+      so you can use the :checked selector on it.
+      -->
+      <input type="checkbox" />
+      
+      <!--
+      Some spans to act as a hamburger.
+      -->
+      <span></span>
+      <span></span>
+      <span></span>
+      
+      <!--
+      The menu has to be inside of the button.
+      -->
+      <ul id="menu">
+        <div class="account">
+          <h2> MY NAME </h2>
+          <h3> View account </h3>
+        </div>
+        <h2> Navigation </h2>
+        <a routerLink ='/home'><li>Dashboard</li></a>
+        <a routerLink ='/insight'><li>Manage Insights</li></a>
+        <a routerLink ='/connections'><li>Connections</li></a>
+        <a routerLink ='/notifications'><li>Notifications</li></a>
+        <a routerLink ='/settings'><li id="settings-menu">Settings</li></a>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="title-bar">
+      <h2> {{ title }} </h2> 
+  </div> 
+</header> 
+  <div class="header-context">
+      <h3> {{ headerContext }} </h3> 
+  </div>

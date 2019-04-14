@@ -1,0 +1,62 @@
+<app-sidebar></app-sidebar>
+
+<div id="container">
+  <div class="item">
+      <h2>Your progress is <strong>YOUR</strong> data, lets keep it that way! Thats why you can choose what you want me to notify you off!</h2>
+    <div class="content">
+        <h3>Which notifications do you want to recieve</h3>
+        <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable">
+            <thead>
+              <tr>
+                <th class="mdl-data-table__cell--non-numeric">All Trackers</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">FitBit</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">Google Health</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">KNBSB</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">Runtastic</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">iSleep Tracker</td>
+              </tr>
+            </tbody>
+          </table>
+
+        <h3>Notifications that show Health Date on your lock screen</h3>
+        <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
+          <input type="checkbox" id="switch-1" class="mdl-switch__input" checked>
+          <span class="mdl-switch__label"></span>
+        </label>
+        <br>
+        <h3>Notifications that show Health Date once your phone is unlocked</h3>
+        <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-2">
+          <input type="checkbox" id="switch-2" class="mdl-switch__input" checked>
+          <span class="mdl-switch__label"></span>
+        </label>
+        <br>
+        <h3>Shareable Health Data links</h3>
+        <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-3">
+          <input type="checkbox" id="switch-3" class="mdl-switch__input" checked>
+          <span class="mdl-switch__label"></span>
+        </label>
+        <br>
+        <h3>How many times can we notify you?</h3>
+        <!-- Slider with Starting Value -->
+        <input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="25" tabindex="0">
+        
+        <!-- Accent-colored raised button with ripple -->
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+    Save data
+  </button>
+  
+    </div>
+  </div>
+</div>

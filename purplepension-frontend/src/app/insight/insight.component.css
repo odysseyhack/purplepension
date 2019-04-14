@@ -1,0 +1,49 @@
+#container{
+    margin: 5%;
+}
+
+.item {
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 15px;
+    color: #525252;
+    background-color: white;
+}
+
+strong {
+    color:#D918D9;
+    font-size: 27px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3{
+    opacity: 0.8;
+    font-size: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    text-align: left;
+    padding: 8px;
+    height: 25px;
+  }
+  
+  .name{
+      color: #3D4975;
+      font-weight: bold;
+  }
+
+  .remove{
+    display: inline;
+    border-radius: 90px;
+    background-color: #FE8585;
+    font-weight: 100;
+    color: #ffffff; 
+  }

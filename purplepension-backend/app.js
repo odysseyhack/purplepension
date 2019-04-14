@@ -1,3 +1,4 @@
+const cors = require('cors')
 const express = require("express"),
   router = express.Router(),
   app = express(),
@@ -7,5 +8,6 @@ const express = require("express"),
 
 router.use(bodyParser.urlencoded({ extended: true }));
 router.use(bodyParser.json());
+app.use(cors());
 app.use("/api", routes);
 app.listen(PORT, () => console.log(`Example app listening on port ${PORT}!`));

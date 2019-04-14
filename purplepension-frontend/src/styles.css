@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    font-family: 'open-sans', 'lato', sans-serif;
+    font-size: 12pt;
+    
+}
+
+body {
+    background-color: #0037EF0D;
+}
+
+a {
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 18pt;
+    font-weight: 600;
+    margin-top: 0;
+    padding-top: 15px;
+    
+}
+
+h2 {
+    font-size: 16pt;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 14pt;
+    font-weight: 300;
+}

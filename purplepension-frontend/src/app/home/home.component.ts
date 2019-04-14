@@ -11,32 +11,51 @@ export class HomeComponent implements OnInit {
 
   private stats;
 
-  constructor(private fitservice : FitappService) {
-    this.stats = this.fitservice.getActivities().subscribe(data => console.log(data));//var data = this.fitservice.getStats().subscribe(data => console.log(data));
-    //console.log(data);
+  constructor(private fitservice : FitappService) {   
     
   }
 
   
   ngOnInit() {
-    localStorage.clear;
-    localStorage.setItem('Title', 'My dashboard');
-    localStorage.setItem('Context', 'Hi Diego! Your run today made your work tomorrow so much better!');
-    
-    var array1 = ['FitBit', 'BasicFit', 'HealthApp'];
 
-    array1.forEach(function (element) {
+    this.fitservice.getActivities().subscribe(data => {
+      this.stats = data;
+      console.log('Done loading!');
+
+      localStorage.clear;
+      localStorage.setItem('Title', 'My dashboard');
+      localStorage.setItem('Context', 'Hi Diego! Your run today made your work tomorrow so much better!');
+      
+      var array1 = ['FitBit', 'BasicFit', 'HealthApp'];
+  
+      this.loadData();
+      console.log(this.stats);
+  
+      var count = 0;
+      this.stats.forEach(function (element) {
+        count += element['distance'];
+      });
+
       var div = document.createElement("DIV");
       div.setAttribute('class', 'item');
-      div.innerHTML = element;
+      div.innerHTML = count/1000 + ' km runned total';
 
-      document.getElementById("detailItems").appendChild(div);
-      console.log(element);
-    });
+      document.getElementById("data").appendChild(div);
+      
+
+    }, err => console.log(err));
+
+    
 
 
   }
 
-
+  loadData() {
+    this.fitservice.getActivities().subscribe(data => {
+      this.stats = data;
+      console.log('Done loading!');
+    }, err => console.log(err));//var data = this.fitservice.getStats().subscribe(data => console.log(data));
+    //console.log(data);
+  }
 
 }

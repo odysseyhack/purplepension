@@ -4,11 +4,10 @@ main {
     margin: auto;
     height: auto;
     padding-bottom: 5vh;
-    text-align: center;
 }
 
-.chart{
-    width: 20vw;
+.chart img{
+    width: 80vw;
 }
 
 #graph-img {
@@ -22,8 +21,8 @@ main {
     background-position-x: center;
 }
 
-#detail-items {
-    width: 100%;
+#detailItems {
+    width: 80vw;
 }
 
 .item {
@@ -33,6 +32,7 @@ main {
     margin-bottom: 15px;
     max-width: 80vw;
     width: 100%;
+    padding: 30px;
 }
 
 #one {
@@ -63,4 +63,31 @@ main {
     background: #7F00FF;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right bottom, #E100FFBF, #7F00FFBF);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right bottom, #E100FFBF, #7F00FFBF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+
+.left{
+    /* float: left; */
+    margin: 0px;
+    width: 80%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.right {
+    /* float: left; */
+    margin: 0px;
+    width: 20%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: right;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 0px;
+}
+
+h3{
+    opacity: 0.8;
+    font-size: 15px;
+    line-height: 0px;
 }

@@ -22,6 +22,7 @@ module.exports = {
     return myContract.deploy({
       data: this.getByteCode(contractName)
     }).send({
+      //TODO: Change from address to one of the ganache addresses
       from: "0xfd6A28837895858b3eF08b77269a666725B2B1a0",
       gas: 4600000,
       gasPrice: ""

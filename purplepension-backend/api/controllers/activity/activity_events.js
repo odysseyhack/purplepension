@@ -9,6 +9,7 @@ router.get("/sign", (req, res) => {
   const eventsToReturn = [];
   const myContract = new web3.eth.Contract(
     bc_handler.getABI("Activity"),
+    // TODO: Change address to one of the deployed Activity contracts
     "0x5757935B3A4e68C2546888787738e9Ee729eF4D2"
   )
     .getPastEvents(
@@ -35,6 +36,7 @@ router.get("/access", (req, res) => {
   const eventsToReturn = [];
   const myContract = new web3.eth.Contract(
     bc_handler.getABI("Activity"),
+    // TODO: Change address to one of the deployed Activity contracts
     "0x5757935B3A4e68C2546888787738e9Ee729eF4D2"
   )
     .getPastEvents(
